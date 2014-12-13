@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51117DC0-B5DA-45B8-970B-CE7A0D51EDB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartHouseSimulator</RootNamespace>
+    <AssemblyName>SmartHouseSimulator</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Sensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Sensor.Designer.cs">
+      <DependentUpon>Add Sensor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddObject.Designer.cs">
+      <DependentUpon>AddObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Condition.cs" />
+    <Compile Include="Define Scenario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Define Scenario.Designer.cs">
+      <DependentUpon>Define Scenario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FileSelector.designer.cs">
+      <DependentUpon>FileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HouseObject.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Set Scenario Condition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set Scenario Condition.Designer.cs">
+      <DependentUpon>Set Scenario Condition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulate Read-Only Sensors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulate Read-Only Sensors.Designer.cs">
+      <DependentUpon>Simulate Read-Only Sensors.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Sensor.resx">
+      <DependentUpon>Add Sensor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddObject.resx">
+      <DependentUpon>AddObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Define Scenario.resx">
+      <DependentUpon>Define Scenario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileSelector.resx">
+      <DependentUpon>FileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule a Task.resx">
+      <DependentUpon>Schedule a Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set Scenario Condition.resx">
+      <DependentUpon>Set Scenario Condition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set Status.resx">
+      <DependentUpon>Set Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Simulate Read-Only Sensors.resx">
+      <DependentUpon>Simulate Read-Only Sensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Scenario.cs" />
+    <Compile Include="ScheduelesSequence.cs" />
+    <Compile Include="Schedule a Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule a Task.Designer.cs">
+      <DependentUpon>Schedule a Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="Set Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set Status.Designer.cs">
+      <DependentUpon>Set Status.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Sensor.SensorDataFormat.datasource" />
+    <None Include="Resources\Rectangle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\157.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
